@@ -1,1 +1,1 @@
-Clash Royale
+Clash Royale Fan site
