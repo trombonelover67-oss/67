@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Royale Hub (Fan Site)</title>
+  styles.css
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="badge">👑</span>
+      <span class="title">Royale Hub</span>
+      <span class="subtitle">Clash Royale Fan Site</span>
+    </div>
+
+    <nav class="nav">
+      #homeHome</a>
+      #decksDeck Builder</a>
+      #cardsCards</a>
+      #guidesGuides</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <h1>Build better decks. Learn matchups. Climb trophies.</h1>
+        <p class="muted">
+          A fan-made hub for deck ideas, card browsing, and quick guides.
+        </p>
+
+        <div class="cta-row">
+          #decksOpen Deck Builder</a>
+          #cardsBrowse Cards</a>
+        </div>
+
+        <div class="disclaimer">
+          <strong>Disclaimer:</strong> This is an unofficial fan site and is not affiliated with or endorsed by Supercell.
+          Fan content must follow Supercell’s Fan Content Policy. [1](https://supercell.com/en/fan-content-policy/)
+        </div>
+      </div>
+
+      <div class="hero-right cardpanel">
+        <h3>Featured Deck (Example)</h3>
+        <p class="muted">A sample “control” deck layout you can replace anytime.</p>
+        <div id="featuredDeck" class="deck-grid"></div>
+        <button id="useFeaturedBtn" class="btn small">Use this deck</button>
+      </div>
+    </section>
+
+    <section id="decks" class="section">
+      <div class="section-head">
+        <h2>Deck Builder</h2>
+        <div class="muted">Pick 8 cards → copy deck list</div>
+      </div>
+
+      <div class="builder">
+        <div class="panel">
+          <div class="row between">
+            <h3>Your Deck</h3>
+            <div class="row gap">
+              <button id="clearDeckBtn" class="btn secondary small">Clear</button>
+              <button id="copyDeckBtn" class="btn small">Copy</button>
+            </div>
+          </div>
+
+          <div id="deckSlots" class="deck-grid slots"></div>
+
+          <div class="muted smalltext">
+            Tip: This is a starter tool. If you want, we can add “Average Elixir”, “Archetype tags”, and share links next.
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="row between">
+            <h3>Pick Cards</h3>
+            <input id="cardSearch" class="input" placeholder="Search cards..." />
+          </div>
+          <div class="filters">
+            <button class="chip active" data-type="all">All</button>
+            <button class="chip" data-type="troop">Troops</button>
+            <button class="chip" data-type="spell">Spells</button>
+            <button class="chip" data-type="building">Buildings</button>
+          </div>
+
+          <div id="cardList" class="card-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cards" class="section">
+      <div class="section-head">
+        <h2>Card Browser</h2>
+        <div class="muted">Search, filter, and view details</div>
+      </div>
+
+      <div class="panel">
+        <div class="row between">
+          <input id="browserSearch" class="input" placeholder="Search cards..." />
+          <span class="muted smalltext" id="countText"></span>
+        </div>
+        <div id="browserGrid" class="grid"></div>
+      </div>
+    </section>
+
+    <section id="guides" class="section">
+      <div class="section-head">
+        <h2>Guides</h2>
+        <div class="muted">Short, practical tips</div>
+      </div>
+
+      <div class="grid two">
+        <article class="panel">
+          <h3>How to improve fast</h3>
+          <ul class="muted">
+            <li>Track your losses: was it matchup, misplay, or overcommit?</li>
+            <li>Learn 1 deck deeply before switching.</li>
+            <li>Count elixir & predict cycles.</li>
+          </ul>
+        </article>
+
+        <article class="panel">
+          <h3>Deck basics</h3>
+          <ul class="muted">
+            <li>Have a win condition + support + defense + spells.</li>
+            <li>Don’t stack too expensive cards (keep it balanced).</li>
+            <li>Include at least one reset / control option if needed.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="muted">© <span id="year"></span> Royale Hub (Fan Site)</span>
+    <span class="muted">Made for learning & fun.</span>
+  </footer>
+
+  app.js</script>
+</body>
+</html>
